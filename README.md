@@ -11,7 +11,7 @@
             
             
             
-                                                                                          ※ table : memo.txt 로 공유
+                                                                                          ※ table : table.txt 로 공유
             
             
             
