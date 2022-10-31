@@ -23,4 +23,4 @@
 		각 기능 메인 페이지 바로가기 링크로 하나씩 추가 -->
 
 
-<%-- <% response.sendRedirect("join.mem"); %> --%>
+<%-- <% response.sendRedirect("join.mem"); %> --%>  
