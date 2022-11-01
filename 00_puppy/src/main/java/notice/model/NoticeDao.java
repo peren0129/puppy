@@ -46,6 +46,18 @@ public class NoticeDao {
 	public void updateReadcount(String num) {
 		sqlSessionTemplate.update(namespace+".addReadcount",num);
 	}
+	
+	public void updateData(NoticeBean no) {
+		System.out.println("updateData 2");
+		sqlSessionTemplate.update(namespace+".updateData", no);
+		System.out.println("updateData 3");
+	}
 
+	public int deleteData(String num) {
+		System.out.println("deleteData 2");
+		int cnt = sqlSessionTemplate.delete(namespace+".deleteData",num);
+		System.out.println("deleteData 3");
+		return cnt;
+	}
 
 }

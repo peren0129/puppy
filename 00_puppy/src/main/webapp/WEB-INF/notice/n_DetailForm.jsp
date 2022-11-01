@@ -53,7 +53,8 @@
 		<tr>
 			<!-- admin으로 로그인시 -->
 			<c:choose>
-				<c:when test="${fn:contains(loginInfo.id, 'admin')}">
+				
+ 				<c:when test="${fn:contains(loginInfo.id, 'admin')}">
 					<td align="center" colspan="2"><br> <br> 
 						<input type="button" value="목록" class="btn btn-secondary "
 							onClick="document.location.href='list.no?pageNumber=${pageNumber}'">
@@ -64,11 +65,18 @@
 								onClick="del('${notice.num}','${pageInfo.pageNumber }')">
 					</td>
 				</c:when>
-				<c:otherwise>
+				
+ 				<c:otherwise>
 					<td align="center" colspan="2">
 						<input type="button"
-						value="목록"  style=" width: 100px; height:40px;"
+							value="목록"  style=" width: 100px; height:40px;"
 						onClick="document.location.href='list.no?pageNumber=${pageNumber}'">
+						<input
+							type="button" style=" width: 100px; height:40px;" value="글수정" class="btn btn-primary "
+							onClick="location.href='update.no?num=${notice.num}&pageNumber=${pageNumber}'">
+						<input type="button" value="글삭제" style=" width: 100px; height:40px;" class="btn btn-primary "
+							onClick="del('${notice.num}','${pageInfo.pageNumber }')">
+						
 					</td>
 				</c:otherwise>
 			</c:choose>

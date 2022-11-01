@@ -17,6 +17,6 @@
 <% response.sendRedirect("join.mem"); %>
  --%>
  
-<a href="list.no"> 게시판 리스트 </a>
-
-<% response.sendRedirect("list.no"); %>
+<a href="list.no"> 공지사항 </a>
+<br>
+<a href="list.qna"> Q&A </a>

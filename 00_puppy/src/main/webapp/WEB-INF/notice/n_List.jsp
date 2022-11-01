@@ -12,24 +12,23 @@
 <center>
 	<br><br>
 	<h1>NOTICE</h1>
-	<br>
-	<table class="table table-dark table-striped" style="width: 70%;" border="0">
+	<br><hr>
+	<table class="navbar navbar-light bg-light" style="width: 70%;" border="0">
 		<tr align="right">
 			<td colspan="4">
 		<%-- <c:if test="${loginInfo.id eq 'admin'}"> --%>
 		<input type="button" value="글쓰기" style=" width: 60px; height:25px;"
-			onclick="window.location='write.no'">
+			onclick="window.location='write.no'"><hr>
 			</td>
 		<%-- </c:if> --%>
 		</tr>
-		
-		<tr align="center">
-			<td width="10%">번호</td>
-			<td>제목</td>
-			<td width="10%">작성자</td>
-			<td width="10%">작성일</td>
+		<tr class="navbar navbar-light bg-light" align="center">
+			<td width="10%">번호<hr></td>
+			<td>제목<hr></td>
+			<td width="10%">작성자<hr></td>
+			<td width="10%">작성일<hr></td>
 		</tr>
-		
+		<tr>
 		<c:if test="${fn:length(lists) eq 0 }">
 			<td colspan="4" align="center">작성된 게시글이 없습니다.</td>
 		</c:if>
@@ -92,7 +91,7 @@
 		</c:if>
 	</table>
 	<br>
-	
+	<hr>
 	<form action="list.no" method="get">
 		   	<select name="whatColumn" style=" width: 90px; height:25px;" >
 		   		<option value="">전체검색</option>
