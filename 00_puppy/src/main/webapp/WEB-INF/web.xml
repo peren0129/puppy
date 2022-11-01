@@ -60,5 +60,50 @@
 		<servlet-name>member</servlet-name>
 		<url-pattern>*.mem</url-pattern>
 	</servlet-mapping>
-
+	
+	<!-- 게시판 -->
+	<servlet>
+		<servlet-name>notice</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/spring/appServlet/notice-servlet.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>notice</servlet-name>
+		<url-pattern>*.no</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>review</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/spring/appServlet/review-servlet.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>review</servlet-name>
+		<url-pattern>*.re</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>qna</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/spring/appServlet/qna-servlet.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>qna</servlet-name>
+		<url-pattern>*.qna</url-pattern>
+	</servlet-mapping>
 </web-app>
