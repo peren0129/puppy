@@ -7,11 +7,11 @@
            221031    깃허브 공유
                        * 기능단위 커밋 ( 메세지 필수 )
             
+           221101    table_member 생성
             
             
             
-            
-                                                                                          ※ table : table.txt 로 공유
+                                                                                ※ table : table.txt 로 공유
             
             
             
