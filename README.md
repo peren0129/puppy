@@ -11,7 +11,7 @@
            
            221101    table_member 생성
                       
-           221102    notice 완성, qna 미완성, table_notice 생성
+           221102    notice 완성, qna 미완성(상품 추가 예정, 팝업창 추가), table_notice 생성
             
             
                                                                                 ※ table : table.txt 로 공유
