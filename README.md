@@ -10,6 +10,8 @@
            221031    notice 목록,글쓰기,수정,삭제 업데이트 - 미완성
            
            221101    table_member 생성
+           
+           221102    notice 완성, qna 미완성, table_notice 생성
             
             
             
