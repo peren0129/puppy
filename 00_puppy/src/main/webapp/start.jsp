@@ -6,7 +6,9 @@
 </style>
  -->
 <body style="padding: 10em 30em">
-	<a href="<%=request.getContextPath()%>/WEB-INF/mall/mallMain.jsp"> mallMain.jsp </a>
+	<%-- <a href="<%=request.getContextPath()%>/WEB-INF/mall/mallMain.jsp"> mallMain.jsp </a>
+	<br>
+	<br> --%>
 	<a href="join.mem" class="mainPoint"> 회원가입 페이지 </a>
 	<br>
 	<br>
