@@ -8,7 +8,7 @@
 	<typeAliases>
 		<typeAlias type="member.model.MemberBean" alias="MyMember"/>
 		<typeAlias type="notice.model.NoticeBean" alias="MyNotice" />
-		<typeAlias type="notice.model.NoticeBean" alias="MyQna" />
+		<typeAlias type="qna.model.QnaBean" alias="MyQna" />
 	</typeAliases>
 	
 	<mappers>

@@ -105,3 +105,5 @@ function back(num, pageNumber) {
 		<input type="submit" value="수정">
 	</form:form>
 </center>
+
+update.jsp<br>

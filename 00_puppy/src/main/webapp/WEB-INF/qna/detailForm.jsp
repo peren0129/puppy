@@ -27,23 +27,40 @@ th, td {
 </style>
 
 <center>
-	<hr>
-	<h2 style="margin: 10px">${qna.subject}</h2>
+	<br><br>
+	<h1>Q&A</h1>
+	<br>
 	<hr>
 	<br>
-	<table class="table table-hover" style="width: 1000px;">
-		<tr>
-			<td width="100">카테고리</td>
-			<td>${qna.cate}</td>
-		</tr>
-		<tr>
-			<td>작성자</td>
-			<td>${qna.writer}</td>
+		<table style="width: 1000px; height:130px;" border="1" align="center" >
 
+			<tr>
+				<td style="width : 150px;">상품이미지 넣기</td>
+				<td>
+					<button type="button" onclick="popupOpen();">상품정보선택</button>
+				</td>
+			</tr>
+		</table>
+		<br><br>
+	<table class="table table-hover" style="width: 1000px;" border="1">
+		<tr align="left">
+			<td colspan="2">
+				<h2 style="margin: 10px">${qna.subject}</h2>
+				<br>
+			</td>
 		</tr>
+		<tr align="left" style="font-size:small">
+			<td colspan="3">
+				${qna.writer} |
+				<fmt:parseDate var="reg_date" value="${qna.reg_date}"
+										pattern="yyyy-MM-dd"/>
+				<fmt:formatDate var="formatDate" value="${reg_date}" pattern="yyyy-MM-dd"/>
+				${formatDate} | 조회수 : ${qna.readcount}
+			</td>
+		</tr>
+		
 		<tr height="200" valign="top">
-			<td><br>본문</td>
-			<td><br>${qna.content}</td>
+			<td colspan="2"><br>${qna.content}</td>
 		</tr>
 		<tr>
 			<td valign="top">첨부파일</td>

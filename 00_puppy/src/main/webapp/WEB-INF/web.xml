@@ -106,7 +106,5 @@
 		<servlet-name>qna</servlet-name>
 		<url-pattern>*.qna</url-pattern>
 	</servlet-mapping>
-	
-	
 
 </web-app>

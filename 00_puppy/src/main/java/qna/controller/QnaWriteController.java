@@ -37,21 +37,24 @@ public class QnaWriteController {
 
 	@Autowired
 	ServletContext servletContext;
+	
 
 	@RequestMapping(value=command, method=RequestMethod.GET)
 	public String write(HttpSession session,HttpServletResponse response) throws IOException {
 		System.out.println("WriteController_GET");
-		response.setContentType("text/html; charset=UTF-8"); //�븳湲�泥섎━
+		response.setContentType("text/html; charset=UTF-8"); //한글처리
 		PrintWriter writer = response.getWriter();
-		// 濡쒓렇�씤�븯硫� loginInfo session�꽕�젙
-		if(session.getAttribute("loginInfo") == null) { // 濡쒓렇�씤 �븞�뻽�쑝硫�
-			session.setAttribute("destination", "redirect:/write.qna");
-			writer.println("<script type='text/javascript'> alert('濡쒓렇�씤�씠 �븘�슂�븳 湲곕뒫�엯�땲�떎.');location.href='login.mem';</script>");
-			writer.flush();
-			writer.close();
-			return null;
+		// 로그인하면 loginInfo session설정
+		//if(session.getAttribute("loginInfo") == null) { // 로그인 안했으면
+		if(session.getAttribute("loginInfo") == null) { // 로그인 안했으면
+			//session.setAttribute("destination", "redirect:/write.qna");
+			//writer.println("<script type='text/javascript'> alert('로그인이 필요한 기능입니다.');location.href='login.mem';</script>");
+			//writer.flush();
+			//writer.close();
+			//return null;
+			return getPage;
 		}
-		else { // 濡쒓렇�씤�뻽�쑝硫�
+		else { // 로그인했으면
 			return getPage;
 		}
 	}
@@ -101,5 +104,6 @@ public class QnaWriteController {
 		mav.setViewName(gotoPage);
 		return mav;
 	}
+	
 
 }
