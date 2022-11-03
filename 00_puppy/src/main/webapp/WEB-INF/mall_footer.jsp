@@ -10,22 +10,22 @@
 <br>
 <!-- footer start -->
 
-<table style="overflow: inherit;">
+<table>
 	<tr>
-		<td><b>Contact us</b><br> <br>Company. 주식회사 유나테크 CEO. 손종곤
+		<td class="menu_1"><b>Contact us</b><br> <br>Company. 주식회사 유나테크 CEO. 손종곤
 			Address. 02175 서울특별시 중랑구 상봉로 62 (망우동) 2층 Business license.
 			705-81-02010 Mall-order license. 2021-서울중랑-2104 [사업자정보확인] CPO. 김고운
 			E-mail. eternokorea@gmail.com
 		</td>
-		<td><b>Information</b><br>
+		<td class="menu_1"><b>Information</b><br>
 		<br>카카오톡 채널문의 11:00-16:00
 		</td>
-		<td><b>Bank Info</b><br>
+		<td class="menu_1"><b>Bank Info</b><br>
 		<br>우리은행 1005-104-269915 예금주. 주식회사 유나테크
 		</td>
-		<td><b>Follow</b><br>
+		<td class="menu_1"><b>Follow</b><br>
 		<br><a href="https://Instagram.com">Instagram</a></td>
-		<td><b>Privacy</b><br>
+		<td class="menu_1"><b>Privacy</b><br>
 		<br>Agreement Privacy Policy Guide
 		</td>
 	</tr>
@@ -47,17 +47,17 @@
 
 
 
-
+<!-- 
 눈동자
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 const eye = document.querySelector('.iris');
 window.addEventListener('mousemove', (event) => {
 const x = -(window.innerWidth / 2 - event.pageX) / 35;
 const y = -(window.innerHeight / 2 - event.pageY) / 35;
 eye.style.transform = `rotate(-45deg) translateY(${y}px)  translateX(${x}px)`;         
         }); 
-</script> -->
+</script>
 
 <style>
 .body {
@@ -162,6 +162,15 @@ eye.style.transform = `rotate(-45deg) translateY(${y}px)  translateX(${x}px)`;
   <div class="lid"></div>
 </div>
 
+눈동자 끝
  -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 </body>
-</html>
+</html> 

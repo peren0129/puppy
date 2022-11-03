@@ -1,14 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-    
-<!--  
-<a href="join.mem"> 회원가입 페이지 </a>
-<a href="###"> 로그인 페이지 </a>
-<a href="###"> ID찾기 페이지 </a>
-<a href="###"> PW찾기 페이지 </a>
--->
-	pageEncoding="UTF-8"%>
+
 <!-- <style>
 	.mainPoint {border: 1px solid #fff; background: none;}
 	.mainPoint:hover {background: #fff;}
