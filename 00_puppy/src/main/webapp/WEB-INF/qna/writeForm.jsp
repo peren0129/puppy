@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="css/jquery.realperson.css">
 <script type="text/javascript" src="js/jquery.plugin.js"></script>
 <script type="text/javascript" src="js/jquery.realperson.js"></script>
+<script src="//cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
 
 
 <script type="text/javascript">
@@ -62,10 +63,10 @@
 	padding: 5px;
 }
 
-table {
+/* table {
 	border-top: 1px solid #DCDCDC;
 	border-collapse: collapse;
-}
+} */
 
 th, td {
 	border-bottom: 1px solid #DCDCDC;
@@ -80,17 +81,17 @@ th, td {
 	<form:form commandName="qna" action="write.qna" method="post"
 		enctype="multipart/form-data">
 		
-		<table style="width: 1000px; height:130px;" border="1" align="center" >
+		<table style="width: 1000px; height:130px; border-color:#F6F6F6" border="3" align="center" >
 
 			<tr>
-				<td style="width : 100px;">상품이미지 넣기</td>
+				<td style="width : 100px;">상품이미지</td>
 				<td>
 					<button type="button" onclick="popupOpen();">상품정보선택</button>
 				</td>
 			</tr>
 		</table>
 		<br><br>
-		<table style="width: 1000px;" border="1" align="center" >
+		<table style="width: 1000px;" border="0" align="center" >
 			
 <%-- 			<tr>
 				<td>카테고리</td>
