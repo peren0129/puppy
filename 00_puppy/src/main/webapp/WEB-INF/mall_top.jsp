@@ -21,10 +21,10 @@
 <title>Insert title here</title>
 </head>
 
-<body style="padding: 1em 3em;">
+<body style="padding: 1em 0em; width: 1350px; align: center;">
 	<table class="table_TF">
 		<tr height="50">
-			<td class="menu_1">SHOP</td>
+			<td class="menu_1">SHOP--TEST입니다</td>
 			<td class="menu_1">LOOKBOOK</td>
 			<td class="menu_1" align="center"><a href="<%=request.getContextPath()%>/start.jsp"><img alt="브랜드 로고(start.jsp)"
 				src="<%=request.getContextPath()%>/resources/images/강세구.png" width="600"></a>
@@ -40,7 +40,6 @@
 		</tr> -->
 	</table>
 	<br>
-	<hr>
 	<br>
 	<table class="table_TF">
 		<tr>

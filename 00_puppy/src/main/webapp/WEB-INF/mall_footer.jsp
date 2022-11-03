@@ -3,8 +3,6 @@
 </tr>
 </table>
 <br>
-<hr>
-<br>
 <br>
 
 <br>
@@ -31,16 +29,6 @@
 	</tr>
 
 </table>
-<br>
-<br>
-<hr>
-<br><br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
 <br>
 <br>
 
