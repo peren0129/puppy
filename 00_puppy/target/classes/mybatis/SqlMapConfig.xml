@@ -4,14 +4,18 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-<!-- 
+
 	<typeAliases>
 		<typeAlias type="member.model.MemberBean" alias="MyMember"/>
+		<typeAlias type="notice.model.NoticeBean" alias="MyNotice" />
+		<typeAlias type="qna.model.QnaBean" alias="MyQna" />
 	</typeAliases>
 	
 	<mappers>
 		<mapper resource="mybatis/member.xml"/>
-	</mappers> -->
+		<mapper resource="mybatis/notice.xml" />
+		<mapper resource="mybatis/qna.xml" />
+	</mappers>
 </configuration>
 
 <!-- SqlMapConfig.xml -->

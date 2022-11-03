@@ -24,5 +24,89 @@ insert into member(num,member_id,passwd,nameTitle)
 	values(memberseq.nextval,'choi','1234','미옥');
 insert into member(num,member_id,passwd,nameTitle)
 	values(memberseq.nextval,'hyang','3126','향');
-	
-	
+
+-- 게시판 고수 향진님 사랑합니다..^^쿨럭!
+-- notice
+
+drop sequence nseq;   
+create sequence nseq   
+start with 1   
+increment by 1   
+nocache;   
+
+drop table notice cascade constraints;
+create table notice(
+      num number not null primary key, -- 게시판 num      
+      writer varchar2(500) not null,   -- 
+      subject varchar2(1000) not null,      
+      cate varchar2(50) not null, -- radio      
+      cateopen varchar2(50) default '전체공개', -- 공개여부      
+      reg_date date default sysdate,            
+      content varchar2(3000),      
+      image varchar2(500),
+      readcount number default 0 -- 조회수      
+);
+
+insert into notice(num,writer,subject,cate)						
+values(nseq.nextval,'admin','이벤트1 (이벤트종료)','이벤트');						
+insert into notice(num,writer,subject,cate)						
+values(nseq.nextval,'admin1','이벤트2','공지');						
+insert into notice(num,writer,subject,cate,content,cateopen)						
+values(nseq.nextval,'admin2','이벤트3','공지','후원자 안내사항 공지 ( 이미지 완성 후 오픈 )','비공개');						
+commit;						
+
+--qna
+
+drop sequence q_seq;					
+create sequence q_seq					
+start with 1					
+increment by 1					
+nocache;					
+					
+drop table qna cascade constraints;					
+create table qna(					
+num number not null primary key,					
+writer varchar2(100), --작성자, members의 num과 연결					
+cateuser varchar2(100), --회원					
+cateopen varchar2(100), --비공개/전체공개					
+cate varchar2(100), --상품					
+subject varchar2(100), -- 상품명					
+image varchar2(100), -- 업로드 이미지					
+-- checkimage varchar2(100), --자동 등록 방지 이미지. 삭제예정					
+content varchar2(500), -- 제목					
+reg_date date, -- 작성일					
+readcount number,	 -- 조회수				
+ref number, -- num					
+re_step number, -- 최신순, 낮은 번호가 최신				
+re_level number, -- 원글 0 답글 1 답답글2					
+reply varchar2(15) -- 댓글				
+);					
+
+-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+-- review 수정예정
+ DROP TABLE reviewboard CASCADE CONSTRAINTS;
+ 
+drop sequence seq_review;
+create sequence seq_review 
+start with 1 
+increment by 1 
+nocache ;
+
+
+create table reviewboard(
+   rnum number primary key,
+   rid varchar2(20),
+   rname varchar2(30),
+   rtitle varchar2(100),
+   rcontents varchar(3000),
+   rimage varchar2(300),
+   r_day date default sysdate,
+   repw varchar2(20),
+   ref number not null,
+   re_step number not null,
+   re_level number not null,
+   carname varchar2(30),
+   asterion number,
+   rcount number default 0
+   ) ;
+   

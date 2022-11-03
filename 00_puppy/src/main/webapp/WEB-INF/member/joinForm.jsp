@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
+
 <%@ include file="../mall_top.jsp"%>
 <div class="ec-base-table typeWrite">
 	<h2 align="center">회원가입</h2>
@@ -43,7 +44,6 @@
 					fw-msg="비밀번호가 일치하지 않습니다." autocomplete="off" maxlength="16"
 					0="disabled" value="" type="password" /> <span id="pwConfirmMsg"></span></td>
 			</tr>
-			<!-- 							<tr class="displaynone">
 								<th scope="row">비밀번호 확인 질문 <img
 									src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif"
 									alt="필수" /></th>
@@ -98,3 +98,4 @@
 </div>
 
 <%@ include file="../mall_footer.jsp"%>
+

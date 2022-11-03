@@ -8,6 +8,10 @@
 	<enableImports><![CDATA[true]]></enableImports>
 	<configs>
 		<config>src/main/webapp/WEB-INF/spring/appServlet/member-servlet.xml</config>
+<<<<<<< HEAD
+		<config>src/main/webapp/WEB-INF/spring/appServlet/notice-servlet.xml</config>
+=======
+>>>>>>> b0adb94d998686c52e30bb950bf63074c477e5ef
 	</configs>
 	<autoconfigs>
 		<config>src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</config>
