@@ -15,7 +15,9 @@
 </style>
  -->
 <body style="padding: 10em 30em">
-	<a href="<%=request.getContextPath()%>/WEB-INF/mall/mallMain.jsp"> mallMain.jsp </a>
+	<%-- <a href="<%=request.getContextPath()%>/WEB-INF/mall/mallMain.jsp"> mallMain.jsp </a>
+	<br>
+	<br> --%>
 	<a href="join.mem" class="mainPoint"> 회원가입 페이지 </a>
 	<br>
 	<br>
@@ -39,9 +41,4 @@
 <!-- 기능 완성시 
 		하단 코드 주석처리 후 
 		각 기능 메인 페이지 바로가기 링크로 하나씩 추가 -->
-
-<%-- 
-<% response.sendRedirect("join.mem"); %>
- --%>
- 
 
