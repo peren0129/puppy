@@ -12,6 +12,8 @@
  border: 1px;
  width: 100%;
 }
+
+
 </style>
 <title>갱.얼쥐 가 ,,세 상을 구 .한단 말임 다,,,.,,</title>
 <head>
@@ -24,7 +26,9 @@
 		<tr height="50">
 			<td class="menu_1">SHOP</td>
 			<td class="menu_1">LOOKBOOK</td>
-			<td class="menu_1" style="width: 600px;" align="center"><a href="<%=request.getContextPath()%>/start.jsp">브랜드 로고(start.jsp)</a></td>
+			<td class="menu_1" align="center"><a href="<%=request.getContextPath()%>/start.jsp"><img alt="브랜드 로고(start.jsp)"
+				src="<%=request.getContextPath()%>/resources/images/강세구.png" width="600"></a>
+			</td>
 			<td class="menu_1">BRAND</td>
 			<td class="menu_1">BOARD</td>
 			<td class="menu_1">MEMBER</td>
@@ -40,4 +44,3 @@
 	<br>
 	<table class="table_TF">
 		<tr>
-			<td colspan="8">내용이 들어갈 자리입니다.</td>
