@@ -8,7 +8,6 @@
 <a href="###"> ID찾기 페이지 </a>
 <a href="###"> PW찾기 페이지 </a>
 -->
-	pageEncoding="UTF-8"%>
 <!-- <style>
 	.mainPoint {border: 1px solid #fff; background: none;}
 	.mainPoint:hover {background: #fff;}
@@ -29,10 +28,17 @@
 	<br>
 	<br>
 	<a href="list.no"> 공지사항 </a>
-	<br><br>
+	<br>
+	<br>
 	<a href="list.qna"> Q&A </a>
-	<br><br>
-	<a href="write.qna"> Q&A글쓰기</a>
+	<br>
+	<br>
+	<a href="write.qna"> Q&A글쓰기 </a>
+	<br>
+	<br>
+	<a href="###"> 상품목록 </a>
+	<br>
+	<br>
 </body>
 
 

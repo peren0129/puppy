@@ -10,8 +10,13 @@
 }
 </style>
 
+<body>
+	<center>
+		<img src="resources/images/puppylogo.png" style="width:170px; height:170px;">
+	</center>
+</body>
+
 <center>
-	<br>
 	<hr>
 	<h2>QNA</h2>
 	<hr>
