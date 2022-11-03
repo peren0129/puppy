@@ -40,6 +40,16 @@
 		select * from notice
 		where num = #{num}
 	</select>
+	
+	<update id="updateData">
+		update notice
+		set writer=#{writer},cate=#{cate},cateopen=#{cateopen},subject=#{subject},content=#{content},image=#{image}
+		where num=#{num}
+	</update>
+	
+	<delete id="deleteData">
+		delete notice where num = #{num}
+	</delete>
 
 
 </mapper>

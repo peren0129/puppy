@@ -48,12 +48,12 @@
 			<tr valign="top" style="height: 100px;">
 				<td align="left"><br>${notice.content}<br></td>
 			</tr>
-		</c:if> 
+		</c:if>
 
 		<tr>
 			<!-- admin으로 로그인시 -->
 			<c:choose>
-				<c:when test="${fn:contains(loginInfo.id, 'admin')}">
+ 				<c:when test="${fn:contains(loginInfo.id, 'admin')}">
 					<td align="center" colspan="2"><br> <br> 
 						<input type="button" value="목록" class="btn btn-secondary "
 							onClick="document.location.href='list.no?pageNumber=${pageNumber}'">
@@ -65,9 +65,8 @@
 					</td>
 				</c:when>
 				<c:otherwise>
-					<td align="center" colspan="2">
-						<input type="button"
-						value="목록"  style=" width: 100px; height:40px;"
+					<td align="center" colspan="2"><input type="button"
+						value="글목록" class="btn btn-primary"
 						onClick="document.location.href='list.no?pageNumber=${pageNumber}'">
 					</td>
 				</c:otherwise>
