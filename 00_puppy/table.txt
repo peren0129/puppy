@@ -1,13 +1,4 @@
 
---미옥 테스트테스트
---미옥 테스트테스트
-
---미옥 테스트테스트
---미옥 테스트테스트
---미옥 테스트테스트
-
-
-
 -- member 
 drop sequence memberseq;
 create sequence memberseq start with 1 increment by 1 nocache ;
