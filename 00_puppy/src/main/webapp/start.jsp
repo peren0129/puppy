@@ -7,6 +7,9 @@
 </style>
  -->
 <body style="padding: 10em 30em">
+	
+	<h3>향진_테스트코드 </h3>
+	
 	<%-- <a href="<%=request.getContextPath()%>/WEB-INF/mall/mallMain.jsp"> mallMain.jsp </a>
 	<br>
 	<br> --%>
