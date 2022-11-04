@@ -8,6 +8,7 @@
  -->
 <body style="padding: 10em 30em">
 
+
 	<%-- <a href="<%=request.getContextPath()%>/WEB-INF/mall/mallMain.jsp"> mallMain.jsp </a>
 	<br>
 	<br> --%>
@@ -35,6 +36,7 @@
 	<a href="###"> 상품목록 </a>
 	<br>
 	<br>
+	<h2>미옥이코드</h2>
 </body>
 
 
