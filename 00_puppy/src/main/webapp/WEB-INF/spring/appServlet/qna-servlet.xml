@@ -11,8 +11,8 @@
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/qna" />
-		<property name="suffix" value=".jsp" />
+		<property name="prefix" value="/WEB-INF/qna"/>
+		<property name="suffix" value=".jsp"/>
 	</bean>
 
 	<context:component-scan base-package="qna" />

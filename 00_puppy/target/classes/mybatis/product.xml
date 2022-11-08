@@ -3,7 +3,28 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="admin.AdminBean">
+<mapper namespace="product.model.Product">
+
+	<select id="GetTotalCount" resultType="int">
+		select count(*) from product
+		<if test="whatColumn=='name'">
+			where name like #{keyword}
+		</if>
+<!-- 		<if test="whatColumn=='content'">
+			where content like #{keyword}
+		</if> -->
+	</select>
+	
+ 	<select id="GetProList" resultType="MyPro">
+		select * from product
+		<if test="whatColumn == 'name'">
+			where name like #{keyword}
+		</if>
+		<if test="whatColumn == 'content'">
+			where content like #{keyword}
+		</if>
+	</select>
+ 
 </mapper>
 
-<!-- member.xml  -->
+<!-- product.xml  -->

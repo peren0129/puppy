@@ -33,10 +33,9 @@
 	<a href="write.qna"> Q&A글쓰기 </a>
 	<br>
 	<br>
-	<a href="###"> 상품목록 </a>
+	<a href="list.pro"> 상품목록 </a>
 	<br>
 	<br>
-	<h2>미옥이코드</h2>
 </body>
 
 
