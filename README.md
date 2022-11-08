@@ -12,6 +12,8 @@
            221101    table_member 생성
             
            221102    notice 완성, qna 미완성(상품 추가 예정, 팝업창 추가), table_notice 생성
+           
+           221108    Prolist 미완성(상품리스트,list 외의 product jsp들 삭제함), Popup_board 미완성(팝업창)
 
             
             
