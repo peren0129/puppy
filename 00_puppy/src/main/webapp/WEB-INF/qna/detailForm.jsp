@@ -104,8 +104,10 @@ th, td {
 					<td align="center" colspan="2"><br> <br> <input
 						type="button" value="이전" class="btn btn-secondary"
 						onClick="document.location.href='list.qna?pageNumber=${pageNumber}'"> 
+						
 						<input type="button" value="글수정" class="btn btn-primary"
 						onClick="location.href='update.qna?num=${qna.num}&pageNumber=${pageNumber}'">
+						
 						<input type="submit" value="글삭제" class="btn btn-primary"
 						onClick="del('${qna.num}','${pageInfo.pageNumber }')"></td>
 				</c:when>
@@ -113,6 +115,7 @@ th, td {
 					<td align="center" colspan="2"><br> <br> <input
 						type="button" value="이전" class="btn btn-secondary"
 						onClick="document.location.href='list.qna?pageNumber=${pageNumber}'">
+						
 						<input type="button" value="글삭제" class="btn btn-primary"
 						onClick="del('${qna.num}','${pageInfo.pageNumber }')"></td>
 				</c:when>

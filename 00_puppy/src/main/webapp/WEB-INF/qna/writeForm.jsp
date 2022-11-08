@@ -20,11 +20,29 @@
 			return;
 		}
 	}
-  
-	function popupOpen(){ //상품팝업
-		  window.open("popup.qna", "_blank", "width=500, height=500");
+	
+	// 상품정보 팝업
+	function popupOpen(){
+		  window.open("popuplist.pro", "_blank", "width=500, height=500");
 	}
 	
+	// 선택 클릭 > 부모창으로
+	function popupList(){
+	      $("#mallSelect").val(0);
+	      $("#mallSelect").find("option[value!=0]").detach();
+
+	      $("#mallSelect").append(malls.filter(".mall" + $(this).val()));
+	    }
+
+	    $(function() {
+	      malls = $("#mallSelect").find("option[value!=0]");
+	      malls.detach();
+
+	      $("#productSelect").change(update_selected);
+	      $("#productSelect").trigger("change");
+	    });
+	    
+	    
 	//스마트에디터
 	$(document).ready(function() {
 		CKEDITOR.replace('content');
