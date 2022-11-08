@@ -15,7 +15,7 @@
 	<a href="join.mem" class="mainPoint"> 회원가입 페이지 </a>
 	<br>
 	<br>
-	<a href="###"> 로그인 페이지 </a>
+	<a href="login.mem"> 로그인 페이지 </a>
 	<br>
 	<br>
 	<a href="###"> ID찾기 페이지 </a>

@@ -21,95 +21,72 @@ th, td {
 	margin: 10px;
 	text-decoration: none;
 }
-/* 
-.overflow {
-	property: overflow;
-	values: auto hidden visible scroll;
-}
- */
-
 </style>
-<div class="ec-base-table typeWrite">
-	<h2 align="center">회원가입</h2>
-	<br>
-	<hr>
-	<form:form commandName="member" action="join.mem" method="post"
-		enctype="multipart/form-data">
-		<table border="0" align="center">
-			<colgroup>
-				<col style="width: 150px;" />
-				<col style="width: 750px;" />
-			</colgroup>
-			<tbody>
-				<tr>
-					<th scope="row" class="list_name" align="left">아이디 <img
-						src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif"
-						alt="필수" /></th>
-					<td><input id="member_id" name="member_id"
-						fw-filter="isFill&isFill&isMin[4]&isMax[16]&isIdentity"
-						fw-label="아이디" fw-msg="" class="inputTypeText" placeholder=""
-						value="" type="text" /> <span id="idMsg"></span> (영문소문자/숫자,
-						4~16자)</td>
-				</tr>
-				<tr>
-					<th scope="row" align="left">비밀번호 <img
-						src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif"
-						alt="필수" /></th>
-					<td>
-						<div class="eTooltip">
-							<input id="passwd" name="passwd"
-								fw-filter="isFill&isMin[4]&isMax[16]" fw-label="비밀번호" fw-msg=""
-								autocomplete="off" maxlength="16" 0="disabled" value=""
-								type="password" /> (영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row" align="left">비밀번호 확인 <img
-						src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif"
-						alt="필수" /></th>
-					<td><input id="user_passwd_confirm" name="user_passwd_confirm"
-						fw-filter="isFill&isMatch[passwd]" fw-label="비밀번호 확인"
-						fw-msg="비밀번호가 일치하지 않습니다." autocomplete="off" maxlength="16"
-						0="disabled" value="" type="password" /> <span id="pwConfirmMsg"></span></td>
-				</tr>
-				<tr>
-					<th scope="row" id="nameTitle" align="left">이름 <img
-						src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif"
-						alt="필수" /></th>
-					<td><span id="nameContents"><input id="name"
-							name="name" fw-filter="isFill&isMax[30]" fw-label="이름" fw-msg=""
-							class="ec-member-name" placeholder="" maxlength="30" value=""
-							type="text" /></span> <span id="under14Msg" class="displaynone">14세
-							미만 사용자는 법정대리인 동의가 필요합니다.</span></td>
-				</tr>
-				<tr class="">
-					<th scope="row" align="left">휴대전화</th>
-					<td><select id="mobile1" name="mobile[]" fw-filter="isNumber"
-						fw-label="휴대전화" fw-alone="N" fw-msg="">
-							<option value="010">010</option>
-							<option value="011">011</option>
-							<option value="016">016</option>
-							<option value="017">017</option>
-							<option value="018">018</option>
-							<option value="019">019</option>
-					</select> - <input id="mobile2" name="mobile[]" maxlength="4"
-						fw-filter="isNumber" fw-label="휴대전화" fw-alone="N" value=""
-						type="text" /> - <input id="mobile3" name="mobile[]"
-						maxlength="4" fw-filter="isNumber" fw-label="휴대전화" fw-alone="N"
-						value="" type="text" /></td>
-				</tr>
-				<tr>
-					<th scope="row" align="left">이메일<img
-						src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif"
-						alt="필수" /></th>
-					<td><input id="email" name="email" fw-filter="isFill&isEmail"
-						fw-label="이메일" fw-alone="N" fw-msg="" value="" type="text" /> <span
-						id="emailMsg"></span></td>
-				</tr>
+<h2 align="center">회원가입</h2>
+<br>
+<form:form commandName="member" action="join.mem" method="post">
+	<table border="0" align="center">
+		<colgroup>
+			<col style="width: 150px;" />
+			<col style="width: 750px;" />
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row" class="list_name" align="left">아이디 <img
+					src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif"
+					alt="필수" /></th>
+				<td><input id="member_id" name="member_id" type="text" /> <span
+					id="idMsg"></span> (영문소문자/숫자, 4~16자)</td>
+			</tr>
+			<tr>
+				<th scope="row" align="left">비밀번호 <img
+					src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif"
+					alt="필수" /></th>
+				<td>
+					<div class="eTooltip">
+						<input id="passwd" name="passwd" autocomplete="off" maxlength="16"
+							type="password" /> (영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row" align="left">비밀번호 확인 <img
+					src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif"
+					alt="필수" /></th>
+				<td><input id="user_passwd_confirm" name="user_passwd_confirm"
+					autocomplete="off" maxlength="16" value="" type="password" /> <span
+					id="pwConfirmMsg"></span></td>
+			</tr>
+			<tr>
+				<th scope="row" id="nameTitle" align="left">이름 <img
+					src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif"
+					alt="필수" /></th>
+				<td><span id="nameContents"><input id="name" name="name"
+						class="ec-member-name" placeholder="" maxlength="30" value=""
+						type="text" /></span> <span id="under14Msg" class="displaynone">14세
+						미만 사용자는 법정대리인 동의가 필요합니다.</span></td>
+			</tr>
+			<tr class="">
+				<th scope="row" align="left">휴대전화</th>
+				<td><select id="mobile1" name="mobile1">
+						<option value="010">010</option>
+						<option value="011">011</option>
+						<option value="016">016</option>
+						<option value="017">017</option>
+						<option value="018">018</option>
+						<option value="019">019</option>
+				</select> - <input id="mobile2" name="mobile2" maxlength="4" type="text" />
+					- <input id="mobile3" name="mobile3" maxlength="4" type="text" /></td>
+			</tr>
+			<tr>
+				<th scope="row" align="left">이메일<img
+					src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif"
+					alt="필수" /></th>
+				<td><input id="email" name="email" value="" type="text" /> <span
+					id="emailMsg"></span></td>
+			</tr>
 
-
-<!-- 약관동의 시작
+			<!-- 약관동의 시작
 				<h3>전체 동의</h3>
 				<div class="ec-base-box typeThinBg gStrong">
 					<p>
@@ -476,14 +453,12 @@ th, td {
 			
 			약관동의 끝  -->
 
-
-			</tbody>
-		</table>
-		<div align="center">
-			<input type="submit" id="btn_join" value="회원가입">
-		</div>
-	</form:form>
-</div>
+		</tbody>
+	</table>
+	<div align="center">
+		<input type="submit" id="btn_join" value="회원가입">
+	</div>
+</form:form>
 
 <%@ include file="../mall_footer.jsp"%>
 

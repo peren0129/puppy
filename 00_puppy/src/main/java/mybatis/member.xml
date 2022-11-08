@@ -3,27 +3,24 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="member.MemberBean">
+<mapper namespace="member.model.Member">
 	<select id="GetMemberDetail" resultType="MyMember">
 		select * from members
 		where id = #{id}
 	</select>
 
 	<insert id="joinMember">
-		insert into members(num,member_id,passwd,nameTitle,mobile1,mobile2,mobile3,email,point)
-		values(memberseq.nextval,#{member_id},#{passwd},#{nameTitle},#{mobile1},#{mobile2},#{mobile3},#{email},#{point})
+		insert into members(num,member_id,passwd,nameTitle,mobile1,mobile2,mobile3,email)  
+		values(memberseq.nextval,#{member_id},#{passwd},#{nameTitle},#{mobile1},#{mobile2},#{mobile3},#{email})
 	</insert>
 
 	<update id="UpdateMember">
-		update members set
-		name=#{name},id=#{id},password=#{password},
-		email1=#{email1},email2=#{email2},rrn1=#{rrn1},rrn2=#{rrn2},rrn3=#{rrn3},hp1=#{hp1},hp2=#{hp2},
-		hp3=#{hp3},zipcode1=#{zipcode1},zipcode2=#{zipcode2},zipcode3=#{zipcode3},zipcode4=#{zipcode4}
-		where num=#{num}
+		update members set member_id=#{member_id},passwd=#{passwd},nameTitle=#{nameTitle},
+		mobile1=#{mobile1},mobile2=#{mobile2},mobile3=#{mobile3},email=#{email} where num=#{num}
 	</update>
 
 	<delete id="DeleteMember">
-		delete members where num =#{num}
+		delete members where num=#{num}
 	</delete>
 
 	<select id="IdCheck" resultType="int">
@@ -33,8 +30,7 @@
 	
 	<select id="Pwcheck" resultType="MyMember">
 		select count(*) from members
-		where password
-		= #{password}
+		where password=#{password}
 	</select>
 	
 	<select id="GetMemberById" resultType="String">
@@ -48,8 +44,7 @@
 	</select>
 	<update id="UpdatePoint">
 		update members
-		set mpoint = point + #{point}
-		where id = #{id} 
+		set mpoint = point + #{point} where id=#{id} 
 	</update>
 
 </mapper>

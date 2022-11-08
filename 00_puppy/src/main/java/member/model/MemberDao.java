@@ -11,10 +11,14 @@ public class MemberDao {
 	@Autowired
 	SqlSessionTemplate sqlSessionTemplate;
 	
-	public int joinMember(MemberBean member) {
-		int cnt = sqlSessionTemplate.insert(namespace+".joinMember",member);
-	
-		System.out.println("Dao cnt:"+cnt);
-		return cnt;
+	public void joinMember(MemberBean member) {
+		sqlSessionTemplate.insert(namespace+".joinMember",member);
+		//System.out.println("check/MemberDao : "+member.getNum()+", "+member.getNameTitle());
 	}
-}
+
+	public MemberBean getMember(String member_id) {
+		MemberBean mbean = null;
+		mbean = sqlSessionTemplate.selectOne(namespace+".GetMember", member_id);
+		return mbean;
+	}
+} 
