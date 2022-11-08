@@ -20,6 +20,7 @@
 	</typeAliases>
 
 	<mappers>
+
 		<mapper resource="mybatis/member.xml" />
 		<mapper resource="mybatis/notice.xml" />
 		<mapper resource="mybatis/qna.xml" />

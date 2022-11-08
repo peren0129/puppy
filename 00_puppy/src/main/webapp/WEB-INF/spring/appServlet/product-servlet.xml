@@ -9,13 +9,15 @@
 
 	<mvc:annotation-driven/> <!-- 유효성검사 할 때 필요 -->
 	
-		<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/admin"/>
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/product"/>
 		<property name="suffix" value=".jsp"/>
 	</bean>
 	
-	<context:component-scan base-package="admin"/> <!-- member 패키지 한번 봐라 -->
+	<context:component-scan base-package="product"/> <!-- product 패키지 한번 봐라 -->
+
 </beans>
 
 
-<!-- .ad 요총이 들어오면 이쪽으로 온다. admin-servlet.xml -->
+<!-- .pro 요총이 들어오면 이쪽으로 온다. product-servlet.xml -->
