@@ -13,7 +13,6 @@
  width: 100%;
 }
 
-
 </style>
 <title>갱.얼쥐 가 ,,세 상을 구 .한단 말임 다,,,.,,</title>
 <head>
@@ -24,7 +23,7 @@
 <body style="padding: 1em 0em; width: 1350px; align: center;">
 	<table class="table_TF">
 		<tr height="50">
-			<td class="menu_1">SHOP--TEST입니다</td>
+			<td class="menu_1">SHOP</td>
 			<td class="menu_1">LOOKBOOK</td>
 			<td class="menu_1" align="center"><a href="<%=request.getContextPath()%>/start.jsp"><img alt="브랜드 로고(start.jsp)"
 				src="<%=request.getContextPath()%>/resources/images/강세구.png" width="600"></a>

@@ -7,7 +7,8 @@
 </style>
  -->
 <body style="padding: 10em 30em">
-	
+
+
 	<%-- <a href="<%=request.getContextPath()%>/WEB-INF/mall/mallMain.jsp"> mallMain.jsp </a>
 	<br>
 	<br> --%>
