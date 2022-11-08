@@ -13,8 +13,6 @@ public class MemberBean {
 //	@NotBlank(message = "PW를 입력하세요.")
 //	@Pattern(regexp = "^(?=.*[a-zA-Z])|((?=.*\\d)|(?=.*\\W)).{10,16}", message = "비밀번호 생성 조건을 확인하세요.")
 	private String passwd;
-//	@NotBlank(message = "PW 확인을 입력하세요.")
-	private String user_passwd_confirm;
 //	@NotBlank(message = "이름을 입력하세요.")
 	private String nameTitle;
 	private String mobile1;
@@ -24,6 +22,7 @@ public class MemberBean {
 //	@Pattern(regexp = "^[0-9a-zA-Z]([-_\\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\\.]?[0-9a-zA-Z])*\\.[a-zA-Z]{2,3}$/i", message = "올바른 이메일 형식이 아닙니다.")
 	private String email;
 	private int point;
+	private String agree;
 	
 	public int getNum() {
 		return num;
@@ -43,12 +42,7 @@ public class MemberBean {
 	public void setPasswd(String passwd) {
 		this.passwd = passwd;
 	}
-	public String getUser_passwd_confirm() {
-		return user_passwd_confirm;
-	}
-	public void setUser_passwd_confirm(String user_passwd_confirm) {
-		this.user_passwd_confirm = user_passwd_confirm;
-	}
+
 	public String getNameTitle() {
 		return nameTitle;
 	}
@@ -84,6 +78,12 @@ public class MemberBean {
 	}
 	public void setPoint(int point) {
 		this.point = point;
+	}
+	public String getAgree() {
+		return agree;
+	}
+	public void setAgree(String agree) {
+		this.agree = agree;
 	}
 	
 }

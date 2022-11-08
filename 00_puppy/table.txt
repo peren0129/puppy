@@ -7,21 +7,36 @@ create table members(
 		num number not null  primary key,
 		member_id varchar2(100), -- (영문소문자/숫자, 4~16자)
 		passwd varchar2(100), -- (영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)
-		user_passwd_confirm varchar2(100), -- 비밀번호 확인
+		-- user_passwd_confirm varchar2(100), -- 비밀번호 확인
 		nameTitle varchar2(50), -- 이름
 		mobile1 varchar2(10),
 		mobile2 varchar2(12),
 		mobile3 varchar2(12),
 		email varchar2(50),
-		point number
+		point number default 0,
+		agree varchar2(10) default 'Y'
 		);
 	
-insert into member(num,member_id,passwd,nameTitle)
+insert into members(num,member_id,passwd,nameTitle)
 	values(memberseq.nextval,'admin','1234','어드민');
-insert into member(num,member_id,passwd,nameTitle)
+insert into members(num,member_id,passwd,nameTitle)
 	values(memberseq.nextval,'choi','1234','미옥');
-insert into member(num,member_id,passwd,nameTitle)
+insert into members(num,member_id,passwd,nameTitle)
 	values(memberseq.nextval,'hyang','3126','향');
+commit;
+
+col num for 99
+col member_id for a10
+col passwd for a7
+col nameTitle for a10
+col mobile1 for a7
+col mobile2 for a7
+col mobile3 for a7
+col email for a10
+col point for 999
+col agree for a5
+select * from members order by num asc;
+	
 
 -- 게시판 고수 향진님 사랑합니다..^^쿨럭!
 -- notice
