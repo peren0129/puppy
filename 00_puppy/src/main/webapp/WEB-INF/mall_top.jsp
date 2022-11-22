@@ -2,10 +2,9 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="common/common.jsp"%>
 <!DOCTYPE html>
-<html>
+<html style="align-self : center;">
 <style>
 .menu_1 {
-	align: center;
 	padding: 0 10px;
 }
 .table_TF{
@@ -20,7 +19,7 @@
 <title>Insert title here</title>
 </head>
 
-<body style="padding: 1em 0em; width: 1350px; align: center;">
+<body style=" margin:0 auto; padding: 1em 0em; width: 1350px;">
 	<table class="table_TF">
 		<tr height="50">
 			<td class="menu_1">SHOP</td>

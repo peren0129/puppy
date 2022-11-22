@@ -7,19 +7,19 @@ import org.hibernate.validator.constraints.NotBlank;
 public class MemberBean {
 	
 	private int num;
-//	@NotBlank(message = "ID를 입력하세요.")
-//	@Pattern(regexp = "^[0-9a-zA-Z]+$.{4,16}", message = "비밀번호 생성 조건을 확인하세요.")
+	@NotBlank(message = "ID를 입력하세요.")
+	@Pattern(regexp = "^[0-9a-zA-Z]+$.{4,16}", message = "아이디 생성 조건을 확인하세요.")
 	private String member_id;
-//	@NotBlank(message = "PW를 입력하세요.")
-//	@Pattern(regexp = "^(?=.*[a-zA-Z])|((?=.*\\d)|(?=.*\\W)).{10,16}", message = "비밀번호 생성 조건을 확인하세요.")
+	@NotBlank(message = "PW를 입력하세요.")
+	@Pattern(regexp = "^(?=.*[a-zA-Z])|((?=.*\\d)|(?=.*\\W)).{10,16}", message = "비밀번호 생성 조건을 확인하세요.")
 	private String passwd;
-//	@NotBlank(message = "이름을 입력하세요.")
+	@NotBlank(message = "이름을 입력하세요.")
 	private String nameTitle;
 	private String mobile1;
 	private String mobile2;
 	private String mobile3;
-//	@NotBlank(message = "이메일을 입력하세요.")
-//	@Pattern(regexp = "^[0-9a-zA-Z]([-_\\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\\.]?[0-9a-zA-Z])*\\.[a-zA-Z]{2,3}$/i", message = "올바른 이메일 형식이 아닙니다.")
+	@NotBlank(message = "이메일을 입력하세요.")
+	@Pattern(regexp = "^[0-9a-zA-Z]([-_\\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\\.]?[0-9a-zA-Z])*\\.[a-zA-Z]{2,3}$/i", message = "올바른 이메일 형식이 아닙니다.")
 	private String email;
 	private int point;
 	private String agree;
