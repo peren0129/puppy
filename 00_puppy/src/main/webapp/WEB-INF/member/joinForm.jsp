@@ -22,6 +22,11 @@ th, td {
 	text-decoration: none;
 }
 </style>
+<script type="text/javascript">
+$(document).ready(function(){
+	alert('1');
+}
+</script>
 <h2 align="center">회원가입</h2>
 <br>
 <form:form commandName="member" action="join.mem" method="post">
